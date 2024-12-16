@@ -2,13 +2,17 @@ print("Jami spotify playlist downloader")
 
 import os
 import spotipy
+from dotenv import load_dotenv
 from spotipy.oauth2 import SpotifyClientCredentials
 import yt_dlp
 import pandas as pd
 
-# Spotify API credentials
-SPOTIFY_CLIENT_ID = '948108c2608b49b080c9a7ba9879f6f8'
-SPOTIFY_CLIENT_SECRET = 'faaeefa5979b43a0924da6d4e0b3ae23'
+
+load_dotenv()  # Load .env file
+
+SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
+SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
+
 
 def get_playlist_songs(playlist_url):
     """Fetch all songs from a Spotify playlist."""
