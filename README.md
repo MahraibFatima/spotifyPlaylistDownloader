@@ -2,6 +2,9 @@
 
 This is a Py-based command-line program that allows you to download songs from a public Spotify playlist in **.mp3 format**. It combines the power of Spotify's API, YouTube search, and FFmpeg to fetch songs and save them locally in a folder named after the playlist.
 
+### Demo
+[Youtube](https://youtu.be/yW-w_28A82A?si=x5AEpkHEbHjA05er)
+
 ---
 
 ### This Program Does
